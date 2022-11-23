@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Cairo", sans-serif;
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.header {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+@media (max-width: 767px) {
+    .header {
+        padding: 20px 0;
+        flex-direction: column-reverse;
+    }
+}
+.header img {
+    width: 55px;
+}
+.header ul {
+    display: flex;
+    align-items: center;
+}
+.header ul li {
+    padding: 10px;
+    margin-left: 15px;
+}
+@media (max-width: 767px) {
+    .header ul li {
+        padding: 5px;
+        margin: 5px 2px 2px 15px;
+    }
+}
+.header ul li a {
+    color: rgb(33, 39, 79);
+    font-weight: bold;
+    font-size: 24px;
+}
+@media (max-width: 767px) {
+    .header ul li a {
+        font-size: 15px;
+    }
+}
+.header .active {
+    border: 1px solid rgb(33, 39, 79);
+    border-radius: 20px;
+}
+
+.container .intro {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.container .intro img {
+    width: 70%;
+    margin: 0 auto 20px;
+}
+.container .intro ul {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.container .intro ul li {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(33, 39, 79, 50%);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.container .intro .active {
+    background-color: rgb(33, 39, 79);
+}
+.download-section {
+    margin: 150px auto;
+}
+.download-section .part1,
+.download-section .part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+@media (max-width: 767px) {
+    .download-section .part1 {
+        flex-direction: column;
+    }
+    .download-section .part2 {
+        flex-direction: column-reverse;
+    }
+}
+.download-section .part1 img {
+    max-width: 250px;
+}
+.download-section .part1 p {
+    font-size: 25px;
+    word-spacing: 1px;
+}
+.download-section .part2 {
+    margin-top: 20px;
+}
+.download-section .part2 img {
+    max-width: 60%;
+}
+.download-section .part2 p {
+    font-size: 24px;
+    word-spacing: 1px;
+    text-align: justify;
+}
+.container .reg-section {
+    margin: 0 auto 150px;
+}
+.container .reg-section .content {
+    background-image: url(../imgs/fbg2.png);
+    background-size: cover;
+    padding: 40px;
+    border-radius: 35px;
+}
+.container .reg-section .text {
+    text-align: center;
+    color: white;
+}
+.container .reg-section .text h4 {
+    font-size: 25px;
+}
+.container .reg-section .text p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.container .reg-section .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .reg-section .links a img {
+    max-width: 100%;
+}
+@media (max-width: 767px) {
+    .container .reg-section .links a img {
+        max-width: 90%;
+    }
+}
+.footer {
+    background-color: rgb(33, 39, 79);
+    padding: 30px;
+    margin: 0;
+}
+.footer .content {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    .footer .content img {
+        max-width: 60%;
+    }
+    .footer .content :last-child {
+        max-width: 15%;
+    }
+}
+.contact-section {
+    display: flex;
+    flex-basis: 50%;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+.contact-section .image {
+    background-image: url(../imgs/contact-us-banner.jpg);
+    background-size: cover;
+    flex-basis: 50%;
+    border-radius: 15px;
+}
+@media (max-width: 767px) {
+    .contact-section .image {
+        display: none;
+    }
+}
+
+.contact-section .form {
+    flex-basis: 50%;
+}
+@media (max-width: 767px) {
+    .contact-section .form {
+        flex-basis: 100%;
+    }
+}
+.contact-section .form .input {
+    font-family: "Cairo", sans-serif;
+    display: block;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: rgb(33, 39, 79);
+}
+.contact-section .form textarea.input {
+    resize: none;
+    height: 230px;
+}
+.contact-section .form .btn {
+    background-color: rgb(33, 39, 79);
+    color: white;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    color: #ffc451;
+    cursor: pointer;
+    font-size: 25px;
+}
